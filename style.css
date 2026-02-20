@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(78, 95, 95);
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    text-decoration: dashed;
+    margin: 25px auto;
+    font-size: 8vmin;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:20px ;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    /* flex-wrap: wrap; */
+    border-radius: 17px;
+    font-size: 9vmin;
+    color: rgb(112, 123, 32);
+    background-color: #ffffc7;
+    cursor: pointer;
+}
+#reset{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: block;
+
+    margin: 2rem auto;
+    cursor: pointer;
+}
+#new{
+     padding: 1rem;
+    font-size: 1.25rem;
+    background-color: black;
+    color: white;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#msg{
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+.msg-con{
+    height: 30vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.hide{
+    display: none;
+}
+
+
+/* chatgpt from here */
+
+#msg{
+    color: #ffffc7;
+    font-size: 8vmin;
+    animation: glow 1.2s infinite alternate;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    background-color: #fff5a5;
+}
+
+#reset:hover{
+    transform: scale(1.1);   
+}
+#new:hover{
+    transform: scale(1.1);
+}
+
+/* @keyframes glow {
+    from {
+        text-shadow: 0 0 10px #fff;
+    }
+    to {
+        text-shadow: 0 0 30px yellow;
+    }
+}
+
+
+.box{
+    transition: all 0.2s ease;
+}
+
+.box:hover{
+    transform: scale(1.1);
+    background-color: #fff5a5;
+}
+
+.box:active{
+    transform: scale(0.95);
+} */
+
+/* .msg-con{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    animation: pop 0.6s ease forwards;
+} */
+
+/* @keyframes pop {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+#reset, #new{
+    transition: all 0.2s ease;
+} */
+
+ 
+
