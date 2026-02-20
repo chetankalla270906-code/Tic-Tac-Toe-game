@@ -149,5 +149,49 @@ h1{
     transition: all 0.2s ease;
 } */
 
- 
+
+/* ===== Mobile Fixes ===== */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 10vmin;
+  }
+
+  .container {
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .game {
+    height: 80vmin;
+    width: 80vmin;
+    gap: 10px;
+  }
+
+  .box {
+    height: 24vmin;
+    width: 24vmin;
+    font-size: 12vmin;
+    border-radius: 12px;
+  }
+
+  #reset, #new {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  #msg {
+    font-size: 9vmin;
+    text-align: center;
+  }
+}
+
+.box {
+  transition: transform 0.15s ease, background-color 0.15s ease;
+}
+
+.box:active {
+  transform: scale(0.92);
+  background-color: #ffe97a;
+}
+
 
